@@ -1,0 +1,18 @@
+.blog-actions {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+background-color: #ffffff;
+  }
+  h1{
+    color: #b89999;
+}
+  
+  .button-like,
+  .button-share,
+  .button-comment {
+    margin-right: 10px;
+    background-color: #ffffff;
+    color: #594fb6;
+    margin-top: 1rem;
+  }

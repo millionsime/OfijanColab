@@ -1,0 +1,179 @@
+.company {
+  background: #110d34;
+  position: relative;
+  padding-block: 1rem;
+}
+
+.company h4 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.company h3, .company p {
+  color: #fff;
+}
+
+.company__companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-inline: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-block: 3.5rem 10rem;
+  gap: 4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.company__companies img {
+  opacity: 0.5;
+}
+
+.company__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 16rem;
+}
+
+@media screen and (max-width: 75em) {
+  .company__container {
+    gap: 10rem;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  .company__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.company__left {
+  position: relative;
+}
+
+@media screen and (max-width: 56.25em) {
+  .company__left {
+    width: 70%;
+    margin-inline: auto;
+  }
+}
+
+.company .img-1 {
+  width: 100%;
+}
+
+.company .img-2 {
+  position: absolute;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 20%;
+  right: 0;
+}
+
+.company .img-2 img {
+  width: 2rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .company .img-2 img {
+    width: 1.5rem;
+  }
+}
+
+.company .img-3 {
+  position: absolute;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  bottom: 12%;
+}
+
+.company .img-3 img {
+  width: 2rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .company .img-3 img {
+    width: 1.5rem;
+  }
+}
+
+.company__points-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.company__point {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.company__point-text {
+  font-size: 25px;
+  font-weight: 400;
+  color: #212123;
+}
+
+.company__point-icon {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  background-image: url("../../assets/sun2.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.company__bg {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+}
+/*# sourceMappingURL=CompanySection.css.map */

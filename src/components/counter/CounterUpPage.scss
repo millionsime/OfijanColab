@@ -1,0 +1,74 @@
+@import "../../styles/mixin.scss";
+.counter-up{
+    background: #ffffff;
+    min-width: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+.counter-up .content{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 10px;
+    
+}
+.content .cbox{
+    width: calc(25% - 30px);
+    border: 1px dashed #060702;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    border-radius: 0%;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #110d34;
+    flex-direction: column;
+    @include respond(phone){
+        width: calc(25% - 30px);
+    }
+    @include respond(tab-port){
+        width: calc(25% - 30px);
+    }
+    @include respond(tab-land)
+    {
+        width: calc(45% - 30px); 
+    }
+
+}
+
+.content .cbox .counter{
+    font-size: 30px;
+    color: #110d34;
+    font-weight: 50;
+    font-family: sans-serif;
+    margin-top: 1%;
+}
+.content .cbox .text{
+    color: #110d34;
+    font-weight: 400;
+   
+
+}
+@media (max-width: 1036px){
+    .counter-up{
+        padding: 50px 50px 0 50px;
+    }
+    .content .box{
+        margin-bottom: 50px;
+    width: 50%;
+}
+}
+@media (max-width: 580px){
+    .content .cbox{
+      
+    width: 100%
+}
+
+}
+

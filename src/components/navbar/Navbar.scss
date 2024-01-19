@@ -1,0 +1,161 @@
+@import "../../styles/mixin.scss";
+@import "../../styles//colors.scss";
+.navbarz{
+    padding-block: 20px;
+    
+    @include respond(phone){
+    padding-block: 15px;
+}
+
+&__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+&__logo{
+    img{
+        width: 30%;
+        height: 20%;
+      
+      
+        @include respond(phone){
+            width: 3rem;
+        }
+    }
+}
+&__links {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    text-decoration: none;
+    list-style: none;
+    
+
+    @include respond(tab-port){
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        width: 50%;
+        left:50%;
+        top: 0%;
+        padding-block: 1rem;
+        border-left: $tade_color 3px solid;
+        gap: 1rem;
+        justify-content: start;
+        align-items: flex-start;
+        padding-left: 5rem;
+        animation: navMotion 0.5s ease;
+    
+    }
+&__exams{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        text-decoration: none;
+        list-style: none;
+    
+        @include respond(tab-port){
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            background-color: #e7d6f9;
+            width: 100%;
+            left:0;
+            top: 20%;
+            padding-block: 1rem;
+            gap: 1rem;
+            align-items: flex-start;
+            padding-left: 1rem;
+            animation: navMotion 0.5s ease;
+        }
+    }
+a{
+    color:  #594fb6;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: bold;
+    &:hover{
+        color: #413a3a;
+       
+    }
+}
+}
+
+&__btn {
+    text-decoration: none;
+    @include respond(tab-port)
+    {
+        display: none;
+    }
+}
+&__menubar{
+    display: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.8rem;
+    background-color: #6f00eb;
+    transition: all 0.3s ease;
+
+    svg{
+        display: grid;
+        place-content: center;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    @include respond(tab-port){
+        display: inline-block;
+    }
+}
+}
+#exit
+{
+    &:hover
+    {
+        .submenu
+        {
+        opacity: 100;
+        background-color: #f5f2f2;
+       width: fit-content;
+        cursor: pointer;
+        border-radius: 0%;
+        padding: 0.8rem;
+        list-style: none;
+        background-color: #ffffff;
+        transition: all 0.3s ease;
+        } 
+    } 
+}
+.hiddenmenu
+{
+    :hover
+    {
+        color: #6f00eb;
+        background-color: #000000;
+    }
+}
+.submenu
+{
+    display: block;
+    opacity: 0;
+    width: 60px;
+    height: 0px;
+   
+   
+}
+.show-nav{
+    display: flex;
+}
+.bg-color{
+    background-color: #000000;
+}
+@keyframes navMotion {
+    0% {
+transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+    
+}

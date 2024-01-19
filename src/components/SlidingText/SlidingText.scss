@@ -1,0 +1,31 @@
+@import '../../styles/mixin.scss';
+.sliding-text-container {
+    width: 200px; /* Set the desired width */
+    overflow: hidden; /* Hide the overflow */
+  }
+  
+  .sliding-text {
+    white-space: nowrap; /* Prevent line breaks */
+    animation: slide 10s infinite; /* Apply the animation */
+  }
+  
+  .sliding-text span {
+    display: inline-block; /* Display the text in a row */
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0); /* Start from the initial position */
+    }
+    33.33% {
+      transform: translateX(-200px); /* Slide to the left */
+    }
+    66.66% {
+      transform: translateX(-400px); /* Slide to the left again */
+    }
+    100% {
+      transform: translateX(0); /* Return to the initial position */
+    }
+  }
+  
+  

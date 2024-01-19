@@ -1,0 +1,135 @@
+.features {
+  padding-block: 0rem;
+}
+
+.features__text {
+  text-align: center;
+  width: 50%;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 56.25em) {
+  .features__text {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .features__text {
+    width: 100%;
+  }
+}
+
+.features__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 56.25em) {
+  .features__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1.3rem;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+.features__feature {
+  text-align: center;
+  border-radius: 30px 30px 0 0;
+  padding: 5rem 1.2rem;
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+.features__feature img {
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+}
+
+.features__feature h4 {
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 56.25em) {
+  .features__feature {
+    padding: 1.3rem;
+    border-radius: 0.8rem;
+  }
+}
+
+.features__feature:nth-child(5) {
+  border-radius: 0 0 30px 30px;
+}
+
+@media screen and (max-width: 56.25em) {
+  .features__feature:nth-child(5) {
+    border-radius: 0.8rem;
+  }
+}
+
+.features .dark-feature {
+  background-color: #6f00eb;
+  color: #fff;
+}
+
+@media screen and (max-width: 56.25em) {
+  .features .white-feature {
+    background-color: #e5e2ff;
+  }
+}
+
+.features .dark-feature-title {
+  color: #fff;
+}
+
+.features .white-feature-title {
+  color: #6f00eb;
+}
+
+.courses_container {
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 56.25em) {
+  .courses_container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .courses_container {
+    width: 100%;
+  }
+}
+
+.questions {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-inline: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3, 1fr;
+      grid-template-columns: 3, 1fr;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.questions__flag {
+  width: 25%;
+  background-color: #6f00eb;
+}
+
+.questions__nav {
+  width: 25%;
+}
+/*# sourceMappingURL=Grade6.css.map */

@@ -1,0 +1,215 @@
+@import "./styles/mixin.scss";
+
+* *::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    color: #0c0c0c9a;
+    background-color: #ffffff;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7em;
+    font-family: "Roboto";
+    src: url("https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu7GxKOzY.woff2") format("woff2"), url("https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxK.woff2") format("woff2");
+    font-display: swap;
+}
+
+img {
+    display: block;
+}
+
+button {
+    display: inline-block;
+    outline: none;
+    border: none;
+}
+
+h1 {
+    color: #594fb6;
+    letter-spacing: -1.7px;
+    font-family: "Poppins", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10px;
+
+    @include respond(tab-port) {
+        font-size: 40px;
+    }
+}
+
+h4 {
+    color: #594fb6;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1em;
+
+    @include respond(tab-port) {
+        font-size: 25px;
+    }
+}
+
+h3 {
+    color: #594fb6;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+
+    @include respond(tab-land) {
+        font-size: 30px;
+    }
+}
+
+h6 {
+    color: #594fb6;
+    margin-bottom: 10px;
+    font-family: 20px;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+.button-primary {
+    color: #fff;
+    text-align: center;
+    background-color: #594fb6;
+    border-radius: 30px;
+    padding: 10px 30px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #6358c4c4;
+    }
+}
+
+.button-outline {
+    color: #594fb6;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #594fb6;
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #594fb6;
+        color: #fff;
+    }
+}
+
+.button-outline-2 {
+    color: #fff;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #fff;
+        color: #594fb6;
+    }
+}
+
+.button-courses {
+    color: #594fb6;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #594fb6;;
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin: 0.22rem;
+    margin-top: 2rem;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #594fb6;
+        color: #fff;
+    }
+}
+
+.gon_le_gon {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+
+    @include respond(phone) {
+        display: block;
+    }
+
+   
+}
+
+.mulu_mulu {
+    width: 100%;
+}
+
+.bale_tla_card {
+    width: 300px;
+    height: max-content;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+
+    @include respond(phone) {
+        margin: 0px;
+        display: grid;
+        width: 300px;
+    }
+}
+
+.bale_tla_card:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+    background-color: #13dfe607;
+}
+
+.tade_btn {
+    background-color: #594fb6;
+    width: 100%;
+    padding: 1rem;
+    margin: 8px 0;
+    display: inline-block;
+    // border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding-left: 14rem;
+    opacity: 0.8;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+.underline
+{
+    height: 2px;
+    width: 100%;
+    background-color: #594fb6;
+}
+
+.success{
+    color: green;
+    font-size: 0.8rem;
+}
+
+.errormessage {
+    font-size: 0.8rem;
+    color: red;
+}

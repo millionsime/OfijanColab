@@ -1,0 +1,256 @@
+@import "../../styles/mixin.scss";
+@import "../../styles//colors.scss";
+
+.sidebar { 
+  width: 250px;
+  height: 100vh;
+  background-color: #d30f0f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar.closed {
+  transform: translateX(-250px);
+}
+
+.main-content {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.main-content.open {
+  margin-left: 0;
+}
+
+.main-content.closed {
+  margin-left: -250px;
+}
+
+.select_field {
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+
+
+  .input_holder {
+
+    height: 30%;
+    gap: 0.1rem;
+    display: flex;
+    border: solid 1px $tade-color;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    p {
+      font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+      width: 50%;
+      height: 50%;
+      font-size: 1rem;
+      align-items: center;
+    }
+
+    select {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      background-color: #fff;
+      font-size: 16px;
+      color: $tade-color;
+      outline: none;
+    }
+
+    option {
+      width: 100%;
+      background-color: #fff;
+      color: $tade-color
+    }
+  }
+}
+
+.exit_exam_page {
+  width: 100%;
+  height: 700px;
+}
+
+.examsholder {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  min-height: 400px;
+  background-color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+ 
+  justify-content: space-evenly
+}
+
+.exams_card {
+  min-width: 350px;
+  width: 45%;
+  height: max-content;
+  display: block;
+  border: 1px solid $tade-color;
+  border-radius: 0px;
+  justify-content: start;
+  align-items: start;
+  padding: 0px;
+  margin: 5px;
+  align-items: flex-end;
+  background-color: #ffffff;
+  box-shadow: #4CAF50;
+  border: 1px solid #ddd; /* Border color for the card */
+  padding: 20px; /* Padding around the card */
+  margin: 10px; /* Margin between cards */
+  .underline
+  {
+    background-color: $milli_gray;
+  }
+}
+.exam_table
+{
+  padding: 15px;
+  width: 100%;
+  li{
+    list-style: square;
+  }
+  tr{
+    border: 0px solid $milli_gray;
+  }
+  .categorizer{
+    width: 35%;
+   font-weight: bold;
+  }
+  .info
+  {
+    width: 15%;
+  }
+  td{
+
+    border: 0rem double $milli_gray;
+  }
+}
+
+.button-open
+{
+color: $tade-color;
+width: 100%;
+padding: 2px;
+display: flex;
+justify-content: center;
+font-weight: bold;
+&:hover{
+  color: #594fb6d8
+}
+}
+.exams_card .__buttons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+
+.btnpreview {
+  background-color: #ffffff00;
+  border-radius: 0px;
+  font-weight: bold;
+  padding: 5px;
+  color: $tade-color;
+  text-decoration: underline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+
+
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+
+.hidden-topics {
+  display: none;
+}
+
+.dropdown-icon {
+  cursor: pointer;
+}
+.exams_card {
+
+
+  .exams_head {
+    display: flex;
+    align-items: center;
+
+    .__logo {
+      margin-right: 10px; /* Spacing between logo and title */
+    }
+
+    .__title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  .underline {
+    border-bottom: 1px solid $tade-color;
+    margin: 5px 0; 
+  }
+
+  .exam_table {
+    width: 100%;
+    border-collapse: collapse;
+
+    .table_body {
+      td {
+        padding: 10px; /* Padding for each cell */
+      }
+
+      .categorizer {
+        font-weight: bold;
+      }
+
+      .info {
+        font-style: italic;
+      }
+    }
+
+    .open-holder {
+      text-align: center;
+      padding-top: 10px; /* Spacing above the "Open" button */
+
+      .button-open {
+        background-color: $tade-color;
+        color: $tade-yellow;
+        padding: 10px 20px; /* Button padding */
+        border: none;
+        border-radius: 5px; /* Button border radius */
+        cursor: pointer;
+        font-size: 16px;
+      &:hover{
+        opacity: 0.7;
+      }
+      }
+
+    }
+  }
+}

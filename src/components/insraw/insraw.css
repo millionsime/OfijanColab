@@ -1,0 +1,77 @@
+.insraw {
+  background-color: aqua;
+  width: 100%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .insraw {
+    padding-top: 1rem;
+  }
+}
+
+.abbe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+}
+
+.__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 37.5em) {
+  .__cards {
+    display: block;
+  }
+}
+
+.__card {
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.__list_container {
+  background-color: rgba(238, 108, 22, 0);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1%;
+  border: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.__container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #8783b9;
+}
+
+.thebutton {
+  width: 100%;
+  background-color: rgba(0, 100, 0, 0);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  place-self: center;
+  place-content: center;
+}
+/*# sourceMappingURL=insraw.css.map */

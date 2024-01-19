@@ -1,0 +1,98 @@
+.counter-up {
+  background: #ffffff;
+  min-width: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+}
+
+.counter-up .content {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.content .box {
+  width: calc(20% - 30px);
+  border: 1px dashed #060702;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #110d34;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 37.5em) {
+  .content .box {
+    width: calc(25% - 30px);
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  .content .box {
+    width: calc(25% - 30px);
+  }
+}
+
+@media screen and (max-width: 75em) {
+  .content .box {
+    width: calc(45% - 30px);
+  }
+}
+
+.content .box .counter {
+  font-size: 50px;
+  color: #110d34;
+  font-weight: 500;
+  font-family: sans-serif;
+  margin-top: 10%;
+}
+
+.content .box .text {
+  color: #110d34;
+  font-weight: 400;
+}
+
+@media (max-width: 1036px) {
+  .counter-up {
+    padding: 50px 50px 0 50px;
+  }
+  .content .box {
+    margin-bottom: 50px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 580px) {
+  .content .box {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=CounterUpPage.css.map */

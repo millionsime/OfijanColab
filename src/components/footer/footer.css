@@ -1,0 +1,72 @@
+.footer {
+  background-color: #6f00eb;
+  padding-block: 1rem;
+  color: white;
+}
+
+.footer h3 {
+  color: #fff;
+}
+
+.footer__text {
+  text-align: center;
+}
+
+.footer__stores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+  margin-block: 3rem 6rem;
+}
+
+.footer__logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.footer__logo img {
+  width: 100%;
+}
+
+.footer__links {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.footer li {
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.footer li:hover {
+  color: #212123;
+}
+/*# sourceMappingURL=footer.css.map */

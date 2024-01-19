@@ -1,0 +1,129 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/colors.scss";
+
+.modalw {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 248, 248, 0.541);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.closed {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.modal-contentw {
+  background-color: $tade-color;
+  // background: linear-gradient(to bottom, $tade-color, $tade-yellow);
+  padding: 10px;
+  border-radius: 5px;
+  height: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 90%;
+  display: flex;
+  width: 100%;
+
+  h3 {
+    color: #fff;
+  }
+}
+
+.card-containerw {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.exam-descriptionw {
+  margin-bottom: 20px;
+}
+
+.combined-cardw {
+  display: flex;
+  width: 50%;
+  li{
+    list-style: none;
+    color: $tade-yellow;
+    border-bottom: 1px gray solid;
+    margin: 5px;
+  }
+}
+
+.cardw {
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 250px;
+
+}
+.cardw:hover{
+  opacity: 0.8;
+}
+
+
+.positivew {
+  border: 2px solid $tade-yellow;
+  background-color: $tade-yellow;
+  color: $tade-color;
+}
+
+.negativew {
+  border: 2px solid $tade-yellow;
+  background-color:$tade-color;
+ 
+  h4{
+    color: $tade-yellow;
+  }
+}
+
+.close-btnw {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #bbb;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.close-btnw:hover {
+  background-color: #999;
+}
+
+
+.modalw.fade-in {
+  opacity: 1;
+}
+
+.modalw.fade-out {
+  opacity: 0;
+}
+
+.modal-contentw.slide-in {
+  transform: scale(1);
+}
+
+.modal-contentw.slide-out {
+  transform: scale(0);
+}

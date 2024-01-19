@@ -1,0 +1,54 @@
+@import "../../styles/mixin.scss";
+
+ .hero{
+    padding-block: 2rem;
+ background-color: rgb(255, 255, 255);
+
+    &__container {
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+
+        @include respond(tab-port) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__btn-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+    }
+
+    &__right {
+        position: relative;
+
+        @include respond(tab-port){
+            width: 70%;
+            margin-inline: auto;
+        }
+    }
+
+    .img-1{
+      width: 80%;
+        height: 40%;
+    }
+
+    .img-2{
+        width: 35%;
+        position: absolute;
+        bottom: 0;
+        right: -20px;
+    }
+
+    .img-3{
+        width: 50%;
+        position: absolute;
+        bottom: -20px;
+        left: -30px;
+    }
+    
+ }

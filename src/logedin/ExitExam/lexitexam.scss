@@ -1,0 +1,280 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/colors.scss";
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f2f2f2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar.closed {
+  transform: translateX(-250px);
+}
+
+.main-content {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.main-content.open {
+  margin-left: 0;
+}
+
+.main-content.closed {
+  margin-left: -250px;
+}
+
+// .exitexam
+// {
+//     display: grid;
+//     height: max-content;
+//     background-color: #f0f;
+//     padding-top: 1rem;
+//     padding-bottom: 1rem;
+// }
+// .exams_list{
+//     background-color: #009624;
+
+// }
+// .departments{
+//    background-color: rgb(182, 12, 12);
+//    overflow-y: scroll;
+//    max-height: 500px;
+//    margin-bottom: 20px;
+//    width: 250px;
+//    height: 100vh;
+
+// a{
+//     text-decoration: none;
+//     color: rgb(82, 12, 82);
+// }
+// li{
+//     list-style: none;
+//     gap: 0.1rem;
+//     margin-bottom: 2px;
+//     &:hover{
+//         background-color: rgb(184, 179, 184);
+//     a{
+//     color: white;
+//     }       
+// }
+
+// }
+
+// }
+.exit_exam_page {
+
+  width: 100%;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+  justify-content: start;
+}
+
+.dept_exam {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.all_exams {
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  flex-direction: row;
+  gap: 1rem;
+  height: max-content
+}
+.h7{
+color: $tade-color;
+font-weight: lighter;
+}
+
+.exam_div
+{
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+justify-content: center;
+
+}
+.dept_holder
+{
+
+  width: 17rem;
+  height: max-content;
+  justify-content: start;
+  display: flex;
+  padding: 10px;
+  
+}
+.all_departments {
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 500px;
+  overflow-y: scroll;
+  width: 35%;
+
+  :hover {
+    background-color: #fdfdfd;
+    color: $tade-color;
+    
+  }
+
+  @include respond(tab-port) {
+    display: none;
+    width: 250px;
+
+  }
+  @include respond(tab-land) {
+    display: none;
+    width: 250px;
+
+  }
+  @include respond(phone) {
+    display: none;
+    width: 250px;
+
+  }
+
+  &__card {
+    flex-basis: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.1rem;
+    margin: 10px;
+    padding: 10px;
+    background-color: $tade-color;
+    font-weight: bold;
+    color: #fafafa;
+    border-left: solid 1px $tade-color;
+
+    p {
+      font-weight: bold;
+    }
+
+   
+
+  }
+}
+
+.show-nav {
+  display: flex;
+}
+
+.bg-color {
+  background-color: #000000;
+}
+
+.close-button {
+  display: flex;
+  background-color: #fff;
+  padding: 1rem;
+  padding-left: 15rem;
+ 
+
+}
+
+.open-button {
+  display: flex;
+  background-color: #fff;
+  padding: 1rem;
+
+}
+
+.product_card .buttons {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.buttons
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product_card {
+  height: max-content;
+  border: 1px solid #df0cce17;
+  border-radius: 5px;
+  justify-content: start;
+  padding: 10px;
+  align-items: start;
+  width: 40%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s ease;
+  @include respond(tab-port) {}
+  width: 40%;
+}
+
+
+.product_card:hover {
+  border-color: $tade-color;
+  background-color: #01dee609;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+  filter: brightness(110%); /* Add glow effect on hover */
+ 
+}
+
+.details {
+  flex-basis: 60%;
+  height: max-content;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  justify-content: start;
+  padding: 10px;
+  align-items: start;
+  width: 400px;
+  height: 390px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  opacity: 0;
+  color: $tade-color;
+  transition: all 0.3s ease;
+}
+.btnpreview{
+  background-color: #ffffff00;
+  border-radius: 20px;
+  padding: 10px;
+  color: $tade-color;
+}
+h2{
+  color: #000000;
+}

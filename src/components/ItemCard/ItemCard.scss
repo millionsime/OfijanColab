@@ -1,0 +1,49 @@
+.product-card {
+    width: 300px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00c853;
+    margin-bottom: 10px;
+  }
+  
+  .product-questions {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .product-answer {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card .btn {
+    background-color: #00c853;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .product-card .btn:hover {
+    background-color: #009624;
+  }
+  

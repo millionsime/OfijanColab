@@ -1,0 +1,101 @@
+.signup {
+  margin-block: 3rem;
+  background-color: #110d34;
+  height: 30rem;
+  overflow: hidden;
+}
+
+.signup__container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 75em) {
+  .signup__container {
+    -ms-grid-columns: 30% 70%;
+        grid-template-columns: 30% 70%;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  .signup__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.signup img {
+  -webkit-transform: translateX(5rem);
+          transform: translateX(5rem);
+}
+
+@media screen and (max-width: 75em) and (max-width: 75em) {
+  .signup img {
+    -webkit-transform: translateX(-3rem);
+            transform: translateX(-3rem);
+  }
+}
+
+@media screen and (max-width: 75em) and (max-width: 56.25em) {
+  .signup img {
+    display: none;
+  }
+}
+
+.signup h3, .signup p {
+  text-align: right;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 37.5em) {
+  .signup h3, .signup p {
+    text-align: center;
+  }
+}
+
+.signup__right {
+  margin-top: 6rem;
+  z-index: 5;
+}
+
+.signup input {
+  outline: none;
+  border: none;
+}
+
+.signup form {
+  z-index: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  margin-top: 3rem;
+  padding: 0.4rem;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+
+.signup form .email {
+  padding-inline: 1rem 7rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .signup form .email {
+    padding-inline: 1rem;
+  }
+}
+/*# sourceMappingURL=SignUpSection.css.map */

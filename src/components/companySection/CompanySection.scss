@@ -1,0 +1,152 @@
+@import '../../styles/mixin.scss';
+@import '../../styles/colors.scss';
+
+.company {
+    background: $tade_color;
+    position: relative;
+    padding-block: 1rem;
+    margin: 1rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+
+    h2 {
+       
+        text-align: center;
+    }
+
+    h3, p{
+        color: #aaa;
+        display: flex;
+        justify-content: center;
+    }
+    h4{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__companies {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+        width: fit-content;
+        margin-block: 1rem;
+        gap: 4rem;
+        flex-wrap: wrap;
+        
+        img {
+            opacity: 0.5;
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start;
+        gap: 16rem;
+
+        @include respond(tab-land) {
+            gap: 10rem;
+        }
+
+        @include respond(tab-port) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__left {
+        position: relative;
+
+        @include respond(tab-port) {
+            width: 60%;
+            margin-inline: auto;
+        }
+    }
+
+    .img-1 {
+        width: 100%;
+    }
+
+    .img-2 {
+        position: absolute;
+        padding: 1rem;
+        background-color: $tade_color;
+        border-radius: 50%;
+        top: 20%;
+        right: 0;
+
+        img{
+            width: 2rem;
+
+            @include respond(phone){
+                width: 1.5rem;
+            }
+        }
+    }
+
+    .img-3 {
+        position: absolute;
+        padding: 1rem;
+        background-color: $tade_color;
+        border-radius: 0.3rem;
+        bottom: 12%;
+
+        img {
+            width: 2rem;
+
+            @include respond(phone){
+                width: 1.5rem;
+            }
+        }
+    }
+
+    &__points-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        color: white;
+        margin-top: 3rem;
+    }
+
+    &__point {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: white;
+        padding: 0.5rem;
+        margin: 0.3rem;
+        border-radius: 2rem;
+    }
+
+    &__point-text {
+        font-size: 25px;
+        font-weight: 400;
+        color: $tade_color;
+    }
+
+    &__point-icon{
+        width: 35px;
+        height: 35px;
+        color: $tade_color;
+        background-image: url("../../assets/ofijan_negetive.png");
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__bg {
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.05;
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+    }
+}

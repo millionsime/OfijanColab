@@ -1,0 +1,100 @@
+@import '../../styles/mixin.scss';
+
+.features {
+    padding-block: 0rem;
+    &__text {
+        text-align: center;
+        width: 50%;
+        margin-inline: auto;
+        margin-bottom: 0rem;
+
+        @include respond(tab-port) {
+            width: 70%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: repeat(1, 1fr);
+
+        @include respond(tab-port) {
+            grid-template-columns: 1fr;
+            gap: 1.3rem;
+            grid-template-rows: auto;
+        }
+        li{
+            text-decoration: none;
+            list-style: none;
+        }
+        .list_group
+        {
+           align-items: center;
+           justify-content: center;
+           justify-items: center; 
+        }
+    }
+
+    &__feature {
+        text-align: center;
+        border-radius: 30px 30px 0 0;
+        padding: 1rem;
+        grid-area: span 1 / span 1 / span 1 / span 1;
+
+        img {
+            margin-inline: auto;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            padding: 0;
+            text-align: justify;
+            color: #b6b6b6;
+            font-family: Cambria, Cochin, Times, 'Times New Roman', serif;
+            font-size: 0.91rem;
+            line-height: 1.1rem;
+        }
+
+        h4 {
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+            font-weight: bold;
+        }
+
+        @include respond(tab-port) {
+            padding: 1.3rem;
+            border-radius: 0.8rem;
+        }
+    }
+
+    &__feature:nth-child(5){
+        border-radius: 0 0 30px 30px; 
+
+        @include respond(tab-port) {
+            border-radius: 0.8rem;
+        }
+    }
+
+    .dark-feature {
+        background-color: #594fb6;
+        color: #fff;
+    }
+
+    .white-feature {
+        @include respond(tab-port) {
+            background-color: #ffffff;
+        }
+    }
+
+    .dark-feature-title {
+        color: #fff;
+    }
+
+    .white-feature-title {
+        color: #594fb6;
+    }
+}
